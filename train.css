@@ -11,3 +11,16 @@
     background: gray;
 
 }
+table {
+    color: white;
+    background-color: blue;
+
+}
+th {
+    color: white;
+
+}
+.form-group {
+    color: gray;
+    background-color: gray;
+}
