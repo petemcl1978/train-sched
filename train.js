@@ -1,5 +1,5 @@
 
-$( document ).ready(function(){
+$(document).ready(function(){
 var firebaseConfig = {
     apiKey: "AIzaSyB08iW_fkBw_GkdG90HedE26GhI7VNe_g8",
     authDomain: "trainschedule-21cc6.firebaseapp.com",
@@ -15,7 +15,7 @@ var firebaseConfig = {
     var database= firebase.dataBase();
 
 //button to submit the info from user
-$("#trainInfobtn").on("click", function(event){
+$("#trainInfoBtn").on("click", function(event){
     event.preventDefault();//no button reset
 
     //set variables of user input
@@ -26,7 +26,7 @@ $("#trainInfobtn").on("click", function(event){
     //converts user input to usable information
 
     var firstTime = moment($("#firstTime").val().trim(),
-    "hh:mm").subract(1,"years").format("X");
+    "hh:mm").subtract(1,"years").format("X");
 
     var frequency = $("#freq").val().trim();
 
@@ -79,7 +79,7 @@ $("#trainInfobtn").on("click", function(event){
         //time apart
         var trainRemain = difference % frequency;
         //min till arrive
-        var minUntill = frequency - trainRemain;
+        var minUntil = frequency - trainRemain;
 
         //NEXT
 
