@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$("document").ready(function(){
 var firebaseConfig = {
     apiKey: "AIzaSyB08iW_fkBw_GkdG90HedE26GhI7VNe_g8",
     authDomain: "trainschedule-21cc6.firebaseapp.com",
