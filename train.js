@@ -1,18 +1,25 @@
 
 $("document").ready(function(){
-var firebaseConfig = {
-    apiKey: "AIzaSyB08iW_fkBw_GkdG90HedE26GhI7VNe_g8",
-    authDomain: "trainschedule-21cc6.firebaseapp.com",
-    databaseURL: "https://trainschedule-21cc6.firebaseio.com",
-    projectId: "trainschedule-21cc6",
-    storageBucket: "trainschedule-21cc6.appspot.com",
-    messagingSenderId: "713989575518",
-    appId: "1:713989575518:web:bbc3bcf5ab0ccae8"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-    var database= firebase.dataBase();
+   // src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js">;//
+    
+    //<!-- TODO: Add SDKs for Firebase products that you want to use
+       //  https://firebase.google.com/docs/web/setup#config-web-app -->//
+    
+   
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB08iW_fkBw_GkdG90HedE26GhI7VNe_g8",
+        authDomain: "trainschedule-21cc6.firebaseapp.com",
+        databaseURL: "https://trainschedule-21cc6.firebaseio.com",
+        projectId: "trainschedule-21cc6",
+        storageBucket: "trainschedule-21cc6.appspot.com",
+        messagingSenderId: "713989575518",
+        appId: "1:713989575518:web:9adc8f3467c5b576"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+       
+        var database= firebase.dataBase();
 
 //button to submit the info from user
 $("#trainInfoBtn").on("click", function(event){
