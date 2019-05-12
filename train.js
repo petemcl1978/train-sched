@@ -1,10 +1,10 @@
 
 $("document").ready(function(){
-   // src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js">;//
+    src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"
     
     //<!-- TODO: Add SDKs for Firebase products that you want to use
        //  https://firebase.google.com/docs/web/setup#config-web-app -->//
-    
+
    
       // Your web app's Firebase configuration
       var firebaseConfig = {
@@ -53,7 +53,7 @@ $("#trainInfoBtn").on("click", function(event){
         //uploading newTrain to firebase
         database.ref().push(newTrain);
         //*push* adds info in database.*set* overwrites existing
-        MediaDeviceInfo
+        //MediaDeviceInfo
         
         //clear elements 
 
@@ -67,12 +67,12 @@ $("#trainInfoBtn").on("click", function(event){
     });
 
     database.ref().on("child_added", function(childSnapshot,preChildKey){
-        console.log(childSnapshot.val());
+        //console.log(childSnapshot.val());
 
         var trainName =
         childSnapshot.val().train;
         var destination =
-        childSnapshot.cal().trainGoing;
+        childSnapshot.val().trainGoing;
         var firstTime =
         childSnapshot.val().trainComing;
         var frequency = childSnapshot.val().everyXMin;
@@ -94,8 +94,8 @@ $("#trainInfoBtn").on("click", function(event){
 
         //adding info to Dom Table
 
-        $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + nextArrival + "</td><td>" +minUntil + "</td><tr>");
+        $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" +  frequency + "</td><td>" + nextArrival + "</td><td>" +minUntil + "</td><tr>");
 
     });
-});
 
+})
