@@ -94,7 +94,7 @@ $("#trainInfoBtn").on("click", function(event){
 
         //adding info to Dom Table
 
-        $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" +  frequency + "</td><td>" + nextArrival + "</td><td>" +minUntil + "</td><tr>");
+        $("tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" +  frequency + "</td><td>" + nextArrival + "</td><td>" +minUntil + "</td><tr>");
 
     });
 
